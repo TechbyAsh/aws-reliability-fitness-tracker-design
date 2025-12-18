@@ -10,11 +10,25 @@ Any failure (process crash, machine shutdown, or network issue) would immediatel
 - Development server terminal output
 - Frontend-only project structure
 
-Local Application Execution
+##Local Application Execution
 Screenshots of the application running locally demonstrate that the frontend was functional but entirely dependent on a developer-managed environment. The application lifecycle was manually controlled, with no health checks, automated restarts, or external monitoring.
 
-Development Server Process
+##Development Server Process
 Terminal output showing the Expo development server confirms that the application required manual startup and was operating in development mode. This highlights the absence of production-grade process management, fault detection, or recovery capabilities.
 
-Frontend-Only Project Structure
+##Frontend-Only Project Structure
 The project file structure was captured to show that the repository contained only frontend code, with no backend services, APIs, containerization artifacts, or infrastructure configuration. This evidence establishes the architectural gap that the remainder of the project is designed to address.
+
+##This baseline confirms that the application initially lacked:
+
+High availability
+
+Fault tolerance
+
+Automated recovery
+
+Scalability
+
+Observability
+
+All subsequent phases in this project focus on systematically addressing these gaps using AWS managed services aligned with the Reliability Pillar of the AWS Well-Architected Framework.
