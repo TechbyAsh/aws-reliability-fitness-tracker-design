@@ -1,12 +1,12 @@
-###Phase 1 – Frontend Hosting on Amazon S3
+Phase 1 – Frontend Hosting on Amazon S3
 
 Objective
 
 Transition the frontend from a locally managed development environment to a durable, highly available, and low-cost production hosting solution using Amazon S3 static website hosting. This phase establishes a reliable frontend layer while keeping the architecture intentionally simple.
 
-###Architecture Delta — Before → After
+Architecture Delta — Before → After
 
-##Before (Phase 0)
+Before (Phase 0)
 
 The frontend application was executed exclusively in a local development environment using the Expo development server. Application availability was fully dependent on the developer’s machine, network connectivity, and manual process management.
 
@@ -22,7 +22,7 @@ No durability guarantees
 
 No separation between development and production environments
 
-##After (Phase 1)
+After (Phase 1)
 
 The frontend application was deployed to Amazon S3 static website hosting, providing a fully managed, highly durable, and publicly accessible frontend layer.
 
@@ -42,7 +42,7 @@ Clear separation between development and production environments
 
 This phase establishes a stable frontend foundation, allowing subsequent phases to focus on backend reliability, scalability, and self-healing behavior.
 
-##Reliability Pillar Alignment
+Reliability Pillar Alignment
 
 Foundations: Properly scoped AWS-managed service
 
@@ -52,7 +52,7 @@ Failure Management: No infrastructure to recover at the frontend layer
 
 Service Limits: Effectively unlimited scale for static content
 
-##Phase 1 Outcome
+Phase 1 Outcome
 
 At the completion of Phase 1, the application frontend is:
 
@@ -64,6 +64,6 @@ Decoupled from local development
 
 Ready to integrate with a resilient backend architecture
 
-##Next Phase
+Next Phase
 Phase 2 – Backend API & Containerization
 This phase introduces a stateless backend service designed explicitly for self-healing and horizontal scaling using containers.
